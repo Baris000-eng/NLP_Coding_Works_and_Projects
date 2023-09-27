@@ -372,7 +372,7 @@ print(new_doc[8], new_doc[9], new_doc[10], new_doc[11])
 
 
 from spacy.tokens import Span
-prod = doc.vocab.strings[u"PRODUCT"]
+prod = new_doc.vocab.strings[u"PRODUCT"]
 print(prod) # hashcode of PRODUCT named entity
 
 
