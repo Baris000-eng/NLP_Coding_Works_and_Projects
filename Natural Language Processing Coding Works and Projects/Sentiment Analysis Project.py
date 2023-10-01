@@ -32,8 +32,8 @@ from scipy.spatial.distance import cosine
 import numpy as np
 
 
-# The cosine similarity between two vectors is the dot product of the vectors divided by the multiplication of the 
-# lengths of them.
+# The cosine similarity between two vectors is the dot product of the vectors 
+# divided by the multiplication of the lengths of them.
 def cosine_similarity(vec1, vec2):
     dot_product = np.dot(vec1, vec2)
     norm_vec1 = np.linalg.norm(vec1)
