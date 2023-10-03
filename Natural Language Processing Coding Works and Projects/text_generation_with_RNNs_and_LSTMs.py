@@ -365,5 +365,12 @@ for i,word in enumerate(full_text.split()):
         print(' '.join(full_text.split()[i-20:i+20]))
         print('\n')
 
+from keras.models import load_model
+
+model = load_model('epoch_big.h5')
+tokenizer = load(open('epoch_big', 'rb'))
+generate_text(model, tokenizer, seq_len, seed_text=seed_text, num_gen_words = 29)
+
+
 
 
